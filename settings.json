@@ -1,0 +1,123 @@
+{
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    "python.linting.pylintPath": "C:\\Users\\YANGZJ\\AppData\\Local\\Programs\\Python\\Python37\\Lib\\site-packages\\pylint\\",
+    "[python]": {
+        
+    },
+	"terminal.integrated.rendererType": "dom",
+	
+	//latex
+	"latex-workshop.latex.tools": [
+	{
+	"name": "latexmk",
+	"command": "latexmk",
+	"args": [
+	"-synctex=1",
+	"-interaction=nonstopmode",
+	"-file-line-error",
+	"-pdf",
+	"%DOC%"
+		]
+	},
+	{
+	"name": "xelatex",
+	"command": "xelatex",
+	"args": [
+	"-synctex=1",
+	"-interaction=nonstopmode",
+	"-file-line-error",
+	"%DOC%"
+		]
+	},          
+	{
+	"name": "pdflatex",
+	"command": "pdflatex",
+	"args": [
+	"-synctex=1",
+	"-interaction=nonstopmode",
+	"-file-line-error",
+	"%DOC%"
+		]
+	},
+	{
+	"name": "bibtex",
+	"command": "bibtex",
+	"args": [
+	"%DOCFILE%"
+		]
+	}
+	],
+
+	"latex-workshop.latex.recipes": [
+		{
+			"name": "xelatex",
+			"tools": [
+			"xelatex",
+			"bibtex",
+			"xelatex",
+			]
+		},
+		{
+			"name": "pdflatex -> bibtex -> pdflatex*2",
+			"tools": [
+			"pdflatex",
+			"bibtex",
+			"pdflatex",
+			"pdflatex"
+			]
+		},		 
+		{
+			"name": "latexmk",
+			"tools": [
+			"latexmk"
+			]
+		}
+	],
+	"latex-workshop.view.pdf.viewer": "tab",
+    "latex-workshop.view.pdf.hand": true,
+    "latex-workshop.latex.autoBuild.run": "onFileChange",
+    "latex-workshop.latex.clean.fileTypes": [
+        ".aux",
+        ".bbl",
+        ".blg",
+        ".idx",
+        ".ind",
+        ".lof",
+        ".lot",
+        ".out",
+        ".toc",
+        ".acn",
+        ".acr",
+        ".alg",
+        ".glg",
+        ".glo",
+        ".gls",
+        ".ist",
+        ".fls",
+        ".log",
+        ".spl",
+        ".synctex.gz",
+        "*.fdb_latexmk"
+    ],
+    "latex-workshop.latex.autoClean.run": "onBuilt",
+
+
+	//editor
+	"editor.wordWrap": "on",
+
+	"restructuredtext.linter.extraArgs": [
+		"--ignore D002",
+		"--ignore D004"
+	],
+	"cSpell.userWords": [
+		"datacenter",
+		"mymap",
+		"neighbour",
+		"polytope",
+		"unsplittable"
+	],
+	"C_Cpp.updateChannel": "Insiders",
+	"git.enableSmartCommit": true,
+
+}
